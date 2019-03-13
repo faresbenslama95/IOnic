@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Inscription
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<form>
+<fieldset>
+    <div class="nom">
+            <label for="Nom">Votre Nom :</label>
+            <input type="text" name="Nom" id="Nom" placeholder="Tapez Votre Nom ici" size="30" maxlength="10" ngModel required/>
+        </div>
+        <br  />
+        <div class="prenom">
+                 <label for="Preom">Votre Prenom :</label>
+                 <input type="text" name="Prenom" id="Prenom" placeholder="Tapez Votre Prenom ici" size="30" maxlength="10" ngModel required />
+                 </div>
+         <br />
+         <div class="radio">
+             <p class="">
+             Votre Sexe :
+             </p>
+             <input type="radio" name="Homme"   ngmodel checked />
+             <label for="Homme">Homme</label>
+             <br />
+             <input type="radio" name="femme"    />
+             <label for="femme">femme</label>
+              </div>
+              <br />
+              <div class="date-naissance">
+       <label for="date">Date de Naissance  :   </label>
+                  <input type="date"  ngModel required/>
+                  </div>
+                  <div class="email">
+                 <label for="email">Email  :   </label>
+                      <input type="email" placeholder="Mouhamed@Tritux.com   " ngModel required/>
+                      </div>
+              <br />
+              <br />
+              <div class="telephone">
+       <label for="telephone">Numéro de téléphone  :   </label>
+                  <input type="tel" placeholder="EXP  :+216 98456123" ngModel required/>
+                  </div>
+                  <br  />
+                  <div class="identifiant">
+                      <label for="Identifiant">Identifiant :</label>
+                      <input type="text" name="identifiant" id="identifiant" placeholder="Créer votre identifiant ici" size="30" maxlength="10" ngModel required/>
+                  </div>
+                   <br />
+                  <div class="password">
+                      <label for="password">Mot de passe :</label>
+                      <input type="password" name="password" id="password" placeholder="Créer nouveau Mot de passe " size="30" maxlength="10" ngModel required/>
+                  </div>
+           <br />
+           <div class="password-repeat">
+               <label for="password-repeat">Retaper le Mot de passe :</label>
+               <input type="password" name="password-repeat" id="password-repeat" placeholder=" Retaper le Mot de passe " size="30" maxlength="10" ngModel required/>
+           </div>
+           <br  />
+         <div>
+         <label for="Province" >Dans quel province habitez-vous ?</label><br />
+                <select name="province" id="province" >
+                    <option value="Ariana">Ariana </option>
+                    <option value="Béja">Béja</option>
+                    <option value="Ben Arous">Ben Arous</option>
+                    <option value="Bizerte">Bizerte </option>
+                    <option value="Gabès">Gabès</option>
+                    <option value="Gafsa">Gafsa</option>
+                    <option value="Jendouba">Jendouba</option>
+                    <option value="Kairouan">Kairouan</option>
+                    <option value="Kasserine">Kasserine</option>
+                    <option value="Kébili">Kébili</option>
+                    <option value="Le Kef">Le Kef</option>
+                    <option value="Mahdia">Mahdia</option>
+                    <option value="La Manouba">La Manouba</option>
+                    <option value="Médenine">Médenine</option>
+                    <option value="Monastir">Monastir</option>
+                    <option value="Nabeul">Nabeul</option>
+                    <option value="Sfax">Sfax</option>
+                    <option value="Sidi Bouzid">Sidi Bouzid</option>
+                    <option value="Siliana">Siliana</option>
+                    <option value="Sousse">Sousse</option>
+                    <option value="Tataouine">Tataouine</option>
+                    <option value="Tozeur">Tozeur</option>
+                    <option value="Tunis">Tunis</option>
+                    <option value="Zaghouan">Zaghouan</option>
+                </select>
+                </div>
+         <br />
+         <div >
+             <label for="Ville">Ville :   </label>
+             <input type="text" name="ville" id="ville" placeholder="Ville" size="20" maxlength="10" ngModel required/>
+             <label for="postal">Code postal  :</label>
+             <input type="number" name="postal" id="postal" placeholder="Code Postal" size="10" maxlength="4" ngModel required/>
+             </div>
+             <br />
+             <div >
+               <p>
+             Adresse :</p>
+                <textarea name="adresse"  rows="3" cols="40" placeholder="Ou habitez-vous ?" ngModel required></textarea>
+
+                 </div>
+                 <br />
+
+                 <br />
+                 <div>
+                 <input type="submit" value="S'inscrire" class="submit-btn" ion-button >
+                 <input type="reset" value="Rénitialiser" class="reset-btn" ion-button>
+                 </div>
+     <br />
+</fieldset>
+  </form>
+</ion-content>
+<ion-footer padding>
+</ion-footer>
